@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Except these dotfiles
+!README_dotfiles
+!.dotfilesignore
+!.bashrc
+!.bashrc.d
+!.bashrc.d/aliases
+!.vimrc

@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# ls
+add_alias ls 'ls --color=auto' ls
+add_alias lh 'ls -lh' ls
+add_alias ll 'ls -al' ls
+add_alias sl 'lh' ls
+
+# cd
+add_alias .. 'cd ..' cd
+
+# projects
+dir="/data/alininst/ansible/playbooks"
+[[ -d $dir ]] && add_alias ansible "cd $dir && [[ -f .aliases ]] && source .aliases" cd
+
+unset dir
+
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

@@ -1,0 +1,12 @@
+Git repository to track dotfiles
+
+Setup initial repository for dotfiles
+$> git init --bare ~/.dotfiles
+
+Create alias to use git .dotfiles
+$> alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+Create gitignore file .dotfilesignore
+$> config config core.excludesfile .dotfilesignore
+$> echo '# Ignore everything' > .dotfilesignore
+$> echo '*' >> .dotfilesignore
