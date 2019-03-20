@@ -8,3 +8,6 @@
 !.bashrc.d
 !.bashrc.d/aliases
 !.vimrc
+!.vim/
+!.vim/colors/
+!.vim/colors/blackboard.vim
